@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CHATBOT con Rick Sanchez."
+    />
+    <title>Rick Chat Portal</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="site-header">
+        <a class="brand" href="/home" data-link>
+          <span class="brand__badge"></span>
+          <span class="brand__text">
+            <strong>Rick Chat Portal</strong>
+            <small>Conversa con el científico más caótico del multiverso</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Abrir navegación"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Principal">
+          <a href="/home" data-link>Home</a>
+          <a href="/chat" data-link>Chat</a>
+          <a href="/about" data-link>About</a>
+        </nav>
+      </header>
+
+      <main id="app" class="view-container" aria-live="polite"></main>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
