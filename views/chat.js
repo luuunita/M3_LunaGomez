@@ -116,12 +116,12 @@ function setupChatEvents() {
   });
 }
 
-function toAnthropicMessages(messages) {
-  return messages.map((message) => ({
-    role: message.role,
-    content: message.text
-  }));
-}
+//function toAnthropicMessages(messages) {
+ // return messages.map((message) => ({
+ //   role: message.role,
+ //   content: message.text
+ // }));
+//}
 
 async function handleSendMessage(text) {
   const cleanText = text.trim();
@@ -148,7 +148,7 @@ async function handleSendMessage(text) {
 
   try {
     const reply = await requestAnthropicReply({
-      messages: toAnthropicMessages(updatedMessages)
+      messages: cleanText
     });
 
     setState({
