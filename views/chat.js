@@ -148,7 +148,7 @@ async function handleSendMessage(text) {
 
   try {
     const reply = await requestAnthropicReply({
-      messages: cleanText
+      message: cleanText
     });
 
     setState({
