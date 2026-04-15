@@ -57,10 +57,25 @@ async function handler(req, res) {
 
     return res.status(200).json({ reply: text });
   } catch (error) {
+    const message = error.message || 'Error generating response';
+
+    if (message.includes('503') || message.includes('high demand')) {
+      return res.status(503).json({
+        error: 'Gemini está con alta demanda en este momento. Intenta de nuevo en unos segundos.'
+      });
+    }
+
+    if (message.includes('429') || message.includes('quota')) {
+      return res.status(429).json({
+        error: 'Se alcanzó el límite de uso de Gemini por ahora. Intenta nuevamente más tarde.'
+      });
+    }
+
     return res.status(500).json({
-      error: error.message || 'Error generating response'
+      error: 'Error generating response'
     });
   }
 }
+
 
 module.exports = handler;
