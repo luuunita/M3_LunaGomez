@@ -1,10 +1,10 @@
-export async function requestAnthropicReply({ message }) {
+export async function requestGeminiReply({ messages }) {
   const response = await fetch('/api/chat', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ message })
+    body: JSON.stringify({ messages })
   });
 
   const data = await response.json();
@@ -17,3 +17,4 @@ export async function requestAnthropicReply({ message }) {
     text: data.reply
   };
 }
+

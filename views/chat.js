@@ -1,4 +1,4 @@
-import { requestAnthropicReply } from '../src/services/anthropicApi.js';
+import { requestGeminiReply } from '../src/services/geminiApi.js';
 import { getState, setState } from '../src/state.js';
 
 export function renderChat() {
@@ -116,13 +116,6 @@ function setupChatEvents() {
   });
 }
 
-//function toAnthropicMessages(messages) {
- // return messages.map((message) => ({
- //   role: message.role,
- //   content: message.text
- // }));
-//}
-
 async function handleSendMessage(text) {
   const cleanText = text.trim();
   if (!cleanText) return;
@@ -147,8 +140,8 @@ async function handleSendMessage(text) {
   renderChat();
 
   try {
-    const reply = await requestAnthropicReply({
-      message: cleanText
+    const reply = await requestGeminiReply({
+      messages: updatedMessages
     });
 
     setState({
