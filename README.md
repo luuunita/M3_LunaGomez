@@ -129,7 +129,23 @@ Actualmente el proyecto incluye pruebas unitarias con Vitest para:
 - conteo de caracteres;
 - transformación de respuestas de la API del chat.
 
-## Implementación de IA
+## Sobre el uso de IA
+![Respuesta del chat](./assets/1Prompt.png)
+![Respuesta del chat](./assets/1Respuesta.png)
+![Respuesta del chat](./assets/2Prompt.png)
+![Respuesta del chat](./assets/2Respuesta.png)
+![Respuesta del chat](./assets/2darespuesta.png)
+![Respuesta del chat](./assets/3Prompt.png)
+![Respuesta del chat](./assets/3Respuesta.png)
+![Respuesta del chat](./assets/3RaRespuesta.png)
+![Respuesta del chat](./assets/4Prompt.png)
+![Respuesta del chat](./assets/4Respuesta.png)
+
+
+
+
+
+
 
 
 ## Autora
