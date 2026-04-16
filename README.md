@@ -120,10 +120,6 @@ Actualmente el proyecto incluye pruebas unitarias con Vitest para:
 
 
 
-
-
-
-
 ## Autora
 Luna Gomez, Desarrolladora Fullstack junior.
 
