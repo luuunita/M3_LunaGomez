@@ -30,38 +30,6 @@ https://m3-luna-gomez.vercel.app/
 - Google Gemini API
 - Vitest
 
-## Estructura del proyecto
-
-```bash
-M3_LunaGomez/
-├── api/
-│   └── chat.js
-├── assets/
-│   └── Rick.jpg
-├── src/
-│   ├── chatTransformer.js
-│   ├── chatTransformer.test.js
-│   ├── main.js
-│   ├── navigation.js
-│   ├── router.js
-│   ├── state.js
-│   ├── utils.js
-│   ├── utils.test.js
-│   └── services/
-│       └── geminiApi.js
-├── views/
-│   ├── about.js
-│   ├── chat.js
-│   ├── home.js
-│   └── notFound.js
-├── .env.example
-├── .gitignore
-├── index.html
-├── package.json
-├── styles.css
-└── vercel.json
-```
-
 ## Cómo ejecutar el proyecto localmente
 
 1. Clonar el repositorio
